@@ -11,11 +11,11 @@ REACT와 SSR을 이용한 프로젝트 만들기
 --
 #### FRONT
 
-<img src = "./sampleImg/react.png" width="100px" height="60px">
-<img src = "./sampleImg/styled-component.jpeg" width="100px" height="60px">
-<img src = "./sampleImg/redux.jpg" width="100px" height="60px">
-<img src = "./sampleImg/redux-saga.jpg" width="100px" height="60px">
-<img src = "./sampleImg/next.jpeg" width="100px" height="60px"><br/>
+<img src = "./sampleImg/react.png" width="100px" height="60px" display = "inline">
+<img src = "./sampleImg/styled-component.jpeg" width="100px" display = "inline" height="60px">
+<img src = "./sampleImg/redux.jpg" width="100px" height="60px" display = "inline">
+<img src = "./sampleImg/redux-saga.jpg" width="100px" height="60px" display = "inline">
+<img src = "./sampleImg/next.jpeg" width="100px" height="60px" display = "inline"><br/>
 ✔REACT.JS<br/>
 ✔STYLED-COMPONENT<br/>
 ✔REDUX<br/>
