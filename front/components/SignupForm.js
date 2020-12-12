@@ -11,7 +11,10 @@ const SignupForm = () => {
         <input type="password" placeholder="CONFIRM PASSWORD" />
         <button type="submit">SIGNUP</button>
       </form>
-      <Link href="/login"><a>LOGIN</a></Link>
+      <ul>
+        <li><Link href="/"><a>메인으로 돌아가기</a></Link></li>
+        <li><Link href="/login"><a>LOGIN</a></Link></li>
+      </ul>
     </>
   );
 };
