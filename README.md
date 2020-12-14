@@ -2,6 +2,7 @@
 --
 
 📝  끈기가 부족한 사람들을 위한 공부를 도와 주는 웹사이트
+<img src = "./sampleImg/mock.jpeg" width = "500px">
 
 ⛳  목표
 --
@@ -11,16 +12,12 @@ REACT와 SSR을 이용한 프로젝트 만들기
 --
 #### FRONT
 
-<img src = "./sampleImg/react.png" width="100px" height="60px" display = "inline">
-<img src = "./sampleImg/styled-component.jpeg" width="100px" display = "inline" height="60px">
-<img src = "./sampleImg/redux.jpg" width="100px" height="60px" display = "inline">
-<img src = "./sampleImg/redux-saga.jpg" width="100px" height="60px" display = "inline">
-<img src = "./sampleImg/next.jpeg" width="100px" height="60px" display = "inline"><br/>
+<img src = "./sampleImg/react.png" width="100px" height="60px" display = "inline"> <img src = "./sampleImg/styled-component.jpeg" width="100px" display = "inline" height="60px"> <img src = "./sampleImg/redux.jpg" width="100px" height="60px" display = "inline"> <img src = "./sampleImg/redux-saga.jpg" width="100px" height="60px" display = "inline"> <img src = "./sampleImg/next.jpeg" width="100px" height="60px" display = "inline"><br/>
 ✔REACT.JS<br/>
-✔STYLED-COMPONENT<br/>
-✔REDUX<br/>
-✔REDUX_SAGA<br/>
-✔NEXT.JS<br/>
+✔STYLED-COMPONENT <br/>
+✔REDUX <br/>
+✔REDUX_SAGA <br/>
+✔NEXT.JS <br/>
 
 #### BACK<br/>
 <img src = "./sampleImg/express.png" width="100px" height="60px"> <img src = "./sampleImg/mysql.png" width="100px" height="60px"><br/>
