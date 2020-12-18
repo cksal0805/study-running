@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import GlobalStyles from '../styles/global-styles';
 import theme from '../styles/theme';
+import wrapper from '../store/configureStore';
 
 const App = ({ Component }) => (
   <>
@@ -14,7 +15,7 @@ const App = ({ Component }) => (
 );
 
 App.propTypes = {
-  Component: PropTypes.element.isRequired,
+  Component: PropTypes.func.isRequired,
 };
 
-export default App;
+export default wrapper.withRedux(App);
