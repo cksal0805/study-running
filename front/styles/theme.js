@@ -6,6 +6,7 @@ const color = {
   black: '#28364A',
   lightBlue: '#D4F0F0',
   lightGrey: '#e5e5e5',
+  purple: '#9155e5',
 };
 
 const size = {

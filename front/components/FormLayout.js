@@ -1,83 +1,83 @@
-import React, { useContext } from 'react';
-import styled, { ThemeContext } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const FormLayout = ({ children }) => {
-  const themeContext = useContext(ThemeContext);
-  const Wrapper = styled('div')`
+const Wrapper = styled('div')`
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background-color: ${(props) => props.theme.color.lightGrey};
+`;
+const ContentWrapper = styled('div')`
+  border-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+`;
+const TitleBox = styled('div')`
+  width: 20vw;
+  background-color: ${(props) => props.theme.color.blue};
+  @media (${(props) => props.theme.tabletM}) {
+    display: none;
+  }
+`;
+const FormWrapper = styled('div')`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  @media (${(props) => props.theme.tabletS}) {
     width: 100vw;
-    height: 100vh;
-    position:relative;
-    background-color: ${themeContext.color.lightGrey};
-  `;
-  const ContentWrapper = styled('div')`
-    border-radius: 3px;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  `;
-  const TitleBox = styled('div')`
-    width: 20vw;
-    background-color: ${themeContext.color.blue};
-    @media (${themeContext.tabletM}) {
-      display: none;
-    }
-  `;
-  const FormWrapper = styled('div')`
+  }
+  & form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    @media (${themeContext.tabletS}) {
-      width: 100vw;
+    padding: 80px;
+    box-sizing: border-box;
+  }
+  & input{
+    width: 300px;
+    font-size: 15px;
+    border: 2px solid ${(props) => props.theme.color.lightGrey};
+    border-radius: 2px;
+    margin-bottom: 50px;
+    padding: 10px;
+    @media (${(props) => props.theme.tabletS}) {
+      width: 80vw;
     }
-    & form{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 80px;
-      box-sizing: border-box;
+  }
+  & button{
+    width: 300px;
+    background-color: ${(props) => props.theme.color.blue};
+    color: white;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px;
+    @media (${(props) => props.theme.tabletS}) {
+      width: 85vw;
     }
-    & input{
-      width: 300px;
-      font-size: 15px;
-      border: 2px solid ${themeContext.color.lightGrey};
-      border-radius: 2px;
-      margin-bottom: 50px;
-      padding: 10px;
-      @media (${themeContext.tabletS}) {
-        width: 80vw;
-      }
+  }
+  & ul{
+    display: flex;
+  }
+  & ul li{
+    padding: 10px;
+  }
+  & li a{
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    & :hover {
+      color: ${(props) => props.theme.color.blue};
+      cursor: pointer;
     }
-    & button{
-      width: 300px;
-      background-color: ${themeContext.color.blue};
-      color: white;
-      border-radius: 2px;
-      border: 0;
-      padding: 10px;
-      @media (${themeContext.tabletS}) {
-        width: 85vw;
-      }
-    }
-    & ul{
-      display: flex;
-    }
-    & ul li{
-      padding: 10px;
-    }
-    & li a{
-      padding-bottom: 20px;
-      box-sizing: border-box;
-      & :hover {
-        color: ${themeContext.color.blue};
-        cursor: pointer;
-      }
-    }
-  `;
+  }
+`;
+
+const FormLayout = ({ children }) => {
   return (
     <Wrapper>
       <ContentWrapper>
