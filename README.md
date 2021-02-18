@@ -20,9 +20,7 @@ REACT와 SSR을 이용한 프로젝트 만들기
 ✔NEXT.JS <br/>
 
 #### BACK<br/>
-<img src = "./sampleImg/express.png" width="100px" height="60px"> <img src = "./sampleImg/mysql.png" width="100px" height="60px"><br/>
-✔NODE.JS(EXPRESS)<br/>
-✔MYSQL<br/>
+
 
 📆 작업기간
 --
