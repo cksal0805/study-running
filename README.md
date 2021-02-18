@@ -2,7 +2,6 @@
 --
 
 📝  끈기가 부족한 사람들을 위한 공부를 도와 주는 웹사이트
-<img src = "./sampleImg/mock.jpeg" width = "500px">
 
 ⛳  목표
 --
