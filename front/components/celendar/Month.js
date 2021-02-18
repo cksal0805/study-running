@@ -62,18 +62,18 @@ const Month = ({currentMonth}) => {
           <DateItemWrapper>
           {
             Array(7).fill(0).map((n, i) => {
-              const current = currentMonth.clone().week(week).startOf('week').add(n + i, 'day');
-              const isToday = today.format('YYYYMMDD') === current.format('YYYYMMDD') && true;
-              const isGrayed = current.format('MM') === currentMonth.format('MM') ? false : true;
+              const currentDate = currentMonth.clone().week(week).startOf('week').add(n + i, 'day');
+              const isToday = today.format('YYYYMMDD') === currentDate.format('YYYYMMDD') && true;
+              const isGrayed = currentDate.format('MM') === currentMonth.format('MM') ? false : true;
               return (
-                <DateItem key = {i} grey = {isGrayed} isToday = {isToday} onClick = {()=>{onChangeSelectDate(current)}}> 
-                  <strong>{current.format('D')}</strong>
+                <DateItem key = {i} grey = {isGrayed} isToday = {isToday} onClick = {()=>{onChangeSelectDate(currentDate)}}> 
+                  <strong>{currentDate.format('D')}</strong>
                 </DateItem>
               );
             })
           }
           </DateItemWrapper>
-          <ScheduleBar week= {currentMonth.clone().week(week)} event = {event}/>
+          <ScheduleBar event = {event} week = {currentMonth.clone().week(week)}/>
         </WeekLine>
       );
     }
