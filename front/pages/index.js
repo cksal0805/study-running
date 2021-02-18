@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <>
-      반갑습니다. 회원이신가요? <Link href="/login">로그인 하러 가기</Link>
+      <Link href="/main">이거눌러</Link>
     </>
   );
 };

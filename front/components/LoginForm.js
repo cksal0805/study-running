@@ -4,7 +4,7 @@ import Link from 'next/link';
 // eslint-disable-next-line arrow-body-style
 const LoginForm = () => {
   const onSubmitLoginForm = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
   };
   return (
     <>
