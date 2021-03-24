@@ -22,15 +22,16 @@ const ScheduleItem = styled('div')`
   margin: 0px 3px 0px 3px;
   flex: 1 1 0%;
   height: 1.7rem;
-
 `;
 const Item = styled('div')`
+  position: absolute;
   border-radius : 3px;
   box-sizing:border-box;
   padding-left:2px;
   background-color: ${(props) => (props.color ? props.theme.color[props.color] : props.theme.color.blue)};
   margin-bottom: 2px;
-  width: ${(props)=> props.eventTerm !== 0 ? props.eventTerm * 100: 100}%;
+  width: ${(props)=> props.eventTerm !== 0 ? props.eventTerm * 14.2: 14.2}%;
+  top: ${(props) => props.eventOrder * 1.7}rem;
 `
 
 const ScheduleBar = ({ event,week }) => {
@@ -38,7 +39,7 @@ const ScheduleBar = ({ event,week }) => {
   return (
     <BarWrapper>
       <Bar>
-      {Array(7).fill(0).map((n,i) => {
+      {Array(7).fill(0).map((n, i) => {
       const currentDate = week.startOf('week').add(n + i, 'day')
        return( 
         
@@ -54,7 +55,7 @@ const ScheduleBar = ({ event,week }) => {
               (eventDate.contains(currentDate)) &&
               <ScheduleItem>
                 {(isStartDay || (eventDate.contains(currentDate) && isSunDay)) &&
-                <Item key = {v.id} color = {v.color} eventTerm = {eventTerm} top = {1}>{v.toDo}</Item>
+                <Item key={v.id} color={v.color} eventTerm={eventTerm} top={1} eventOrder={v.eventOrder}>{v.toDo}</Item>
                 }
               </ScheduleItem>
               )
